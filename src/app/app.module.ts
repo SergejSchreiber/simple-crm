@@ -22,6 +22,7 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { FirestoreModule } from '@angular/fire/firestore';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FirestoreModule,
     provideFirebaseApp(() => initializeApp({"projectId":"simple-crm-ddba6","appId":"1:1094017108281:web:aefc1ec5b5608161eb40e8","storageBucket":"simple-crm-ddba6.appspot.com","apiKey":"AIzaSyDYNzT7KMfl8pRBarXNz8z1XKxyEdC0BHg","authDomain":"simple-crm-ddba6.firebaseapp.com","messagingSenderId":"1094017108281"})),
     provideFirestore(() => getFirestore()),
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
