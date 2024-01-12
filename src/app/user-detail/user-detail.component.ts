@@ -37,4 +37,12 @@ export class UserDetailComponent {
     });
   }
 
+  editUserDetail() {
+
+  }
+
+  editMenu() {
+    
+  }
+
 }
